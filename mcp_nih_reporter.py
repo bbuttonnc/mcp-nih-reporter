@@ -689,6 +689,10 @@ async def search_combined(
         logger.error(f"Combined search failed: {str(e)}", exc_info=True)
         return f"Combined search failed: {str(e)}\nPlease check the logs for more details."
 
+def main():
+    """Run the MCP server."""
+    mcp.run(transport='stdio')
+
 # Run the server when this script is executed directly
 if __name__ == "__main__":
-    mcp.run(transport='stdio')
+    main()

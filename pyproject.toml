@@ -11,3 +11,6 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 exclude = ["img", "instructions"]
+
+[project.scripts]
+mcp-nih-reporter = "mcp_nih_reporter:main"

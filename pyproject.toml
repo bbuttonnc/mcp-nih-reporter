@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-exclude = ["img", "instructions"]
+include = ["mcp_nih_reporter*"]
 
 [project.scripts]
 mcp-nih-reporter = "mcp_nih_reporter:main"
